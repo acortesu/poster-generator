@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import WrapperP5 from "./components/WrapperP5";
+import posterSketch from "./p5/posterSketch";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Poster Generator</h1>
       </header>
+      <main>
+        <WrapperP5 posterSketch={posterSketch} />
+      </main>
     </div>
   );
 }
